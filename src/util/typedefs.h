@@ -26,23 +26,28 @@
 #include <pthread.h>
 #include <stdint.h>
 
-
 using namespace std;
 
+enum field_type
+{
+	P_FIELD,
+	ECC_FIELD
+};
+enum role_type
+{
+	SERVER,
+	CLIENT
+};
 
-enum field_type {P_FIELD, ECC_FIELD};
-enum role_type {SERVER, CLIENT};
-
-#define MAX_REPLY_BITS			65536 //at most 2^16 bits may be sent in one go
+#define MAX_REPLY_BITS 65536 // at most 2^16 bits may be sent in one go
 #define ELEMENT_WINDOW 1024
-#define MAX_REPLY_BYTES			MAX_REPLY_BITS/8
+#define MAX_REPLY_BYTES MAX_REPLY_BITS / 8
 
-#define RETRY_CONNECT		1000
-#define CONNECT_TIMEO_MILISEC	10000
+#define RETRY_CONNECT 1000
+#define CONNECT_TIMEO_MILISEC 10000
 
-
-#define OTEXT_BLOCK_SIZE_BITS	128
-#define OTEXT_BLOCK_SIZE_BYTES	16
+#define OTEXT_BLOCK_SIZE_BITS 128
+#define OTEXT_BLOCK_SIZE_BYTES 16
 
 #define NUMOTBLOCKS 1024
 #define REGISTER_BITS AES_BITS
@@ -65,19 +70,19 @@ typedef uint16_t REGISTER_SIZE;
 
 #endif
 
-#define LOG2_REGISTER_SIZE		ceil_log2(sizeof(REGISTER_SIZE) << 3)
+#define LOG2_REGISTER_SIZE ceil_log2(sizeof(REGISTER_SIZE) << 3)
 
 #ifdef WIN32
 #include <WinSock2.h>
 #include <windows.h>
 
-typedef unsigned short	USHORT;
+typedef unsigned short USHORT;
 typedef int socklen_t;
 #pragma comment(lib, "wsock32.lib")
 
-#define SleepMiliSec(x)			Sleep(x)
+#define SleepMiliSec(x) Sleep(x)
 
-#else //WIN32
+#else // WIN32
 
 #include <sys/socket.h>
 #include <netdb.h>
@@ -89,15 +94,14 @@ typedef int socklen_t;
 #include <errno.h>
 #include <netinet/tcp.h>
 
-
 typedef int SOCKET;
 #define INVALID_SOCKET -1
 typedef REGISTER_SIZE REGSIZE;
 
-#define SleepMiliSec(x)			usleep((x)<<10)
-#endif// WIN32
+#define SleepMiliSec(x) usleep((x) << 10)
+#endif // WIN32
 
-#define ceil_divide(x, y) ((x) > 0? ( ((x) - 1) / (y) )+1 : 0)
+#define ceil_divide(x, y) ((x) > 0 ? (((x)-1) / (y)) + 1 : 0)
 #define pad_to_multiple(x, y) (ceil_divide(x, y) * (y))
 
 typedef struct securitylevel
@@ -109,38 +113,48 @@ typedef struct securitylevel
 	uint32_t ecckcbits;
 } seclvl;
 
-
 static const seclvl ST = {40, 80, 1024, 160, 163};
 static const seclvl MT = {40, 112, 2048, 192, 233};
 static const seclvl LT = {40, 128, 3072, 256, 283};
 static const seclvl XLT = {40, 192, 7680, 384, 409};
 static const seclvl XXLT = {40, 256, 15360, 512, 571};
 
-enum psi_prot {NAIVE=0, TTP=1, DH_ECC=2, OT_PSI=3, PROT_LAST=4};
+enum psi_prot
+{
+	NAIVE = 0,
+	TTP = 1,
+	DH_ECC = 2,
+	OT_PSI = 3,
+	PROT_LAST = 4
+};
 
-
-static int ceil_log2(int bits) {
-	if(bits == 1) return 1;
+static int ceil_log2(int bits)
+{
+	if (bits == 1)
+		return 1;
 	int targetlevel = 0, bitstemp = bits;
-	while (bitstemp >>= 1) ++targetlevel;
-	return targetlevel + ((1<<targetlevel) < bits);
+	while (bitstemp >>= 1)
+		++targetlevel;
+	return targetlevel + ((1 << targetlevel) < bits);
 }
 
-static int floor_log2(int bits) {
-	if(bits == 1) return 1;
+static int floor_log2(int bits)
+{
+	if (bits == 1)
+		return 1;
 	int targetlevel = 0;
-	while (bits >>= 1) ++targetlevel;
+	while (bits >>= 1)
+		++targetlevel;
 	return targetlevel;
 }
-
 
 // Timing routines
 static double getMillies(timeval timestart, timeval timeend)
 {
-	long time1 = (timestart.tv_sec * 1000000) + (timestart.tv_usec );
-	long time2 = (timeend.tv_sec * 1000000) + (timeend.tv_usec );
+	long time1 = (timestart.tv_sec * 1000000) + (timestart.tv_usec);
+	long time2 = (timeend.tv_sec * 1000000) + (timeend.tv_usec);
 
-	return (double)(time2-time1)/1000;
+	return (double)(time2 - time1) / 1000;
 }
 
 #endif /* TYPEDEFS_H_ */

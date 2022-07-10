@@ -1,0 +1,454 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2014 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Sun Jul 10 20:00:43 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+WSLENV = VSCODE_WSL_EXT_LOCATION/up
+# default
+.SHELLFLAGS := -c
+# makefile (from 'Makefile', line 3)
+SRC = src
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from 'Makefile', line 17)
+GNU_LIB_PATH := x86_64
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /home/leo/PSI_SM2
+# makefile
+SHELL = /bin/sh
+# makefile (from 'Makefile', line 2)
+BIN = bin
+# environment
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"bbca1a7059cee8a1b93da8947fee1c4f.zh-cn","_translationsConfigFile":"/root/.vscode-server/data/clp/bbca1a7059cee8a1b93da8947fee1c4f.zh-cn/tcf.json","_cacheRoot":"/root/.vscode-server/data/clp/bbca1a7059cee8a1b93da8947fee1c4f.zh-cn","_resolvedLanguagePackCoreLocation":"/root/.vscode-server/data/clp/bbca1a7059cee8a1b93da8947fee1c4f.zh-cn/30d9c6cd9483b2cc586687151bcbcd635f373630","_corruptedFile":"/root/.vscode-server/data/clp/bbca1a7059cee8a1b93da8947fee1c4f.zh-cn/corrupted.info","_languagePackSupport":true}
+# environment
+_ = /root/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/node
+# makefile (from 'Makefile', line 26)
+CFLAGS = 
+# makefile (from 'Makefile', line 11)
+DEBUG_OPTIONS = -g3 -ggdb 
+# makefile (from 'Makefile', line 34)
+SOURCE_BIGN = ${SRC}/util/bigNum/*.cpp
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+XDG_DATA_DIRS = /usr/local/share:/usr/share:/var/lib/snapd/desktop
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+VSCODE_CWD = /mnt/d/Microsoft VS Code
+# makefile (from 'Makefile', line 33)
+OBJECTS_UTIL = ${SRC}/util/*.o
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /root/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/d/java/jdk1.8.0_291/jre/bin:/mnt/d/apache-maven-3.6.3/bin:/mnt/d/CTEX/CTeX:/mnt/d/CTEX/CTeX/Packages/ctex/bin:/mnt/d/CTEX/CTeX/Packages/cct/bin:/mnt/d/CTEX/CTeX/Packages/ty/bin:/mnt/d/java/jdk1.8.0_291/bin:/mnt/d/scala/bin:/mnt/d/scala/jre/bin:/mnt/d/mingw64/bin:/mnt/c/Go/bin:/mnt/c/Program Files/Git/cmd:/mnt/d/mysql/bin:/mnt/c/Program Files/nodejs/:/mnt/d/texlive/2021/bin/win32:/mnt/d/MATLAB/R2021b/bin:/mnt/d/Python/Python38/Scripts/:/mnt/d/Python/Python38/:/mnt/c/Users/Leo/AppData/Local/Microsoft/WindowsApps:/mnt/d/JetBrains/GoLand 2020.3/bin:/mnt/d/JetBrains/PyCharm 2020.2.2/bin:/mnt/d/JetBrains/IntelliJ IDEA 2021.1.1/bin:/mnt/c/Users/Leo/go/bin:/mnt/d/Microsoft VS Code/bin:/mnt/c/Program Files/IPFS Desktop/resources/app.asar.unpacked/src/ipfs-on-path/scripts/bin-win:/mnt/c/Users/Leo/go/bin:/mnt/c/Users/Leo/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Leo/AppData/Roaming/npm:/mnt/d/texlive/2021/bin/win32:/snap/bin:/home/leo/cmake-3.23.1-linux-x86_64/bin
+# environment
+XDG_RUNTIME_DIR = /mnt/wslg/runtime-dir
+# makefile (from 'Makefile', line 37)
+OBJECTS_CRYPT = ${SRC}/util/gmCrypto/*.o
+# environment
+VSCODE_LOG_STACK = false
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /home/leo/PSI_SM2
+# makefile (from 'Makefile', line 35)
+OBJECTS_BIGN = ${SRC}/util/bigNum/*.o
+# environment
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-7580c072-167b-4797-9792-bcd0dc08982d.sock
+# makefile (from 'Makefile', line 32)
+SOURCES_UTIL = ${SRC}/util/*.cpp
+# environment
+WSL_INTEROP = /run/WSL/12_interop
+# environment
+PULSE_SERVER = /mnt/wslg/PulseServer
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /root
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+LOGNAME = root
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from 'Makefile', line 30)
+OBJECTS_CORE := ./src/ecdh-psi/dh-psi.o ./src/util/bigNum/utils.o ./src/util/bigNum/bignum.o ./src/util/connection.o ./src/util/parse_options.o ./src/util/gmCrypto/crypto.o
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 2
+# makefile (from 'Makefile', line 15)
+ARCHITECTURE = $(shell uname -m)
+# makefile (from 'Makefile', line 7)
+CC = g++
+# default
+MAKE_VERSION := 4.1
+# environment
+USER = root
+# makefile (from 'Makefile', line 41)
+OBJECTS_DHPSI = ${SRC}/ecdh-psi/*.o
+# makefile
+.DEFAULT_GOAL := all
+# makefile (from 'Makefile', line 22)
+INCLUDE = -I..  -I/usr/include/glib-2.0/ -I/usr/lib/${GNU_LIB_PATH}-linux-gnu/glib-2.0/include `pkg-config --cflags glib-2.0`
+# makefile (from 'Makefile', line 13)
+BATCH = 
+# environment
+NAME = LAPTOP-UM8EM5PC
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+VSCODE_WSL_EXT_LOCATION = /mnt/c/Users/Leo/.vscode/extensions/ms-vscode-remote.remote-wsl-0.66.3
+# default
+MAKE_COMMAND := make
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# makefile (from 'Makefile', line 9)
+COMPILER_OPTIONS = -g3 -O2 
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from 'Makefile', line 29)
+SOURCES_CORE := ./src/ecdh-psi/dh-psi.cpp ./src/util/bigNum/utils.cpp ./src/util/bigNum/bignum.cpp ./src/util/connection.cpp ./src/util/parse_options.cpp ./src/util/gmCrypto/crypto.cpp
+# automatic
++F = $(notdir $+)
+# environment
+VSCODE_HANDLES_SIGPIPE = true
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# makefile (from 'Makefile', line 40)
+SOURCES_DHPSI = ${SRC}/ecdh-psi/*.cpp
+# environment
+LC_ALL = C
+# makefile (from 'Makefile', line 25)
+LIBRARIES = -lgmp -lgmpxx -lpthread  -L /usr/lib  -lssl -lippcp -lcrypto -lglib-2.0 `pkg-config --libs glib-2.0`
+# environment
+HOSTTYPE = x86_64
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+WAYLAND_DISPLAY = wayland-0
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# default
+.RECIPEPREFIX := 
+# makefile (from 'Makefile', line 36)
+SOURCE_CRYPT = ${SRC}/util/gmCrypto/*.cpp
+# environment
+LANG = C
+# environment
+TERM = xterm-256color
+# environment
+VSCODE_EXTHOST_WILL_SEND_SOCKET = true
+# environment
+WSL_DISTRO_NAME = Ubuntu-18.04
+# variable set hash-table stats:
+# Load=91/1024=9%, Rehash=0, Collisions=5/145=3%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2080, inode 253587): 11 files, no impossibilities.
+# src/util/gmCrypto (device 2080, inode 253792): 2 files, no impossibilities so far.
+# src/ecdh-psi (device 2080, inode 254550): 2 files, no impossibilities so far.
+# src/util/bigNum (device 2080, inode 253700): 7 files, no impossibilities so far.
+# src/util (device 2080, inode 254481): 12 files, no impossibilities so far.
+
+# 34 files, no impossibilities in 5 directories.
+
+# Implicit Rules
+
+%.o: %.cpp %.h
+#  recipe to execute (from 'Makefile', line 49):
+	${CC} $< ${COMPILER_OPTIONS} ${DEBUG_OPTIONS} -c ${INCLUDE} ${LIBRARIES} ${CFLAGS} ${BATCH} -o $@
+
+# 1 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+# Not a target:
+src/util/parse_options.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-01 22:41:11.025486661
+#  File has been updated.
+#  Successfully updated.
+
+core: src/ecdh-psi/dh-psi.o src/util/bigNum/utils.o src/util/bigNum/bignum.o src/util/connection.o src/util/parse_options.o src/util/gmCrypto/crypto.o
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+all: core demo lib
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/19=0%
+#  recipe to execute (from 'Makefile', line 44):
+	@echo "make all done."
+
+# Not a target:
+src/util/bigNum/utils.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-01 22:40:19.665487647
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/util/parse_options.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-01 22:41:07.43548673
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/util/bigNum/utils.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-01 22:40:13.615487764
+#  File has been updated.
+#  Successfully updated.
+
+src/util/gmCrypto/crypto.o: src/util/gmCrypto/crypto.cpp src/util/gmCrypto/crypto.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/util/gmCrypto/crypto'
+#  Last modified 2022-07-02 13:38:59.484371526
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 49):
+	${CC} $< ${COMPILER_OPTIONS} ${DEBUG_OPTIONS} -c ${INCLUDE} ${LIBRARIES} ${CFLAGS} ${BATCH} -o $@
+
+demo:
+#  Implicit rule search has not been done.
+ 
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := demo
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=14/27=52%
+#  recipe to execute (from 'Makefile', line 52):
+	${CC} -o psi.out ${SRC}/mains/psi_demo.cpp ${OBJECTS_DHPSI} ${OBJECTS_UTIL} ${CFLAGS} ${DEBUG_OPTIONS} ${LIBRARIES} ${OBJECTS_BIGN} ${OBJECTS_CRYPT} ${INCLUDE} ${COMPILER_OPTIONS}
+
+src/util/bigNum/bignum.o: src/util/bigNum/bignum.cpp src/util/bigNum/bignum.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/util/bigNum/bignum'
+#  Last modified 2022-07-02 13:38:58.494371545
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 49):
+	${CC} $< ${COMPILER_OPTIONS} ${DEBUG_OPTIONS} -c ${INCLUDE} ${LIBRARIES} ${CFLAGS} ${BATCH} -o $@
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-02 08:53:27.868776808
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/ecdh-psi/dh-psi.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-02 07:55:54.968843105
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/util/connection.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-01 22:40:44.875487163
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/ecdh-psi/dh-psi.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-02 14:23:34.534320164
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/util/connection.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-01 22:40:38.855487279
+#  File has been updated.
+#  Successfully updated.
+
+lib:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 54):
+	#${CC} -o libpsi.so ${OBJECTS_DHPSI} ${OBJECTS_UTIL} ${CFLAGS} ${DEBUG_OPTIONS} ${LIBRARIES} ${OBJECTS_BIGN} ${OBJECTS_CRYPT} ${INCLUDE} ${COMPILER_OPTIONS}
+
+src/util/parse_options.o: src/util/parse_options.cpp src/util/parse_options.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/util/parse_options'
+#  Last modified 2022-07-02 13:38:58.994371535
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 49):
+	${CC} $< ${COMPILER_OPTIONS} ${DEBUG_OPTIONS} -c ${INCLUDE} ${LIBRARIES} ${CFLAGS} ${BATCH} -o $@
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+src/util/bigNum/utils.o: src/util/bigNum/utils.cpp src/util/bigNum/utils.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/util/bigNum/utils'
+#  Last modified 2022-07-02 13:38:57.934371556
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 49):
+	${CC} $< ${COMPILER_OPTIONS} ${DEBUG_OPTIONS} -c ${INCLUDE} ${LIBRARIES} ${CFLAGS} ${BATCH} -o $@
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 58):
+	rm -f *.so *.a ${OBJECTS_EXAMPLE} ${OBJECTS_TEST} *.exe ${OBJECTS_DHPSI} ${OBJECTS_UTIL} ${OBJECTS_CRYPT} ${OBJECTS_BIGN}
+
+# Not a target:
+src/util/gmCrypto/crypto.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-01 22:40:34.875487355
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/util/bigNum/bignum.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-28 08:34:19.380734507
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/util/gmCrypto/crypto.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-01 22:39:19.335488806
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/util/bigNum/bignum.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-01 22:39:56.555488091
+#  File has been updated.
+#  Successfully updated.
+
+src/ecdh-psi/dh-psi.o: src/ecdh-psi/dh-psi.cpp src/ecdh-psi/dh-psi.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/ecdh-psi/dh-psi'
+#  Last modified 2022-07-02 14:23:38.644320085
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 49):
+	${CC} $< ${COMPILER_OPTIONS} ${DEBUG_OPTIONS} -c ${INCLUDE} ${LIBRARIES} ${CFLAGS} ${BATCH} -o $@
+
+src/util/connection.o: src/util/connection.cpp src/util/connection.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/util/connection'
+#  Last modified 2022-07-02 13:38:58.76437154
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 49):
+	${CC} $< ${COMPILER_OPTIONS} ${DEBUG_OPTIONS} -c ${INCLUDE} ${LIBRARIES} ${CFLAGS} ${BATCH} -o $@
+
+# files hash-table stats:
+# Load=26/1024=3%, Rehash=0, Collisions=0/80=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 74 / storage = 1054 B / avg = 14 B
+# current buf: size = 8162 B / used = 1054 B / count = 74 / avg = 14 B
+
+# strcache performance: lookups = 100 / hit rate = 26%
+# hash-table stats:
+# Load=74/8192=1%, Rehash=0, Collisions=3/100=3%
+# Finished Make data base on Sun Jul 10 20:00:43 2022
+
+ 

@@ -12,11 +12,10 @@
 #include "socket.h"
 #include <sstream>
 
-bool connect(const char* address, uint16_t port, CSocket& sockfd);
-bool listen(const char* address, uint16_t port, CSocket* sockfd, uint32_t nconnections);
+bool connect(const char *address, uint16_t port, CSocket &sockfd);
+bool listen(const char *address, uint16_t port, CSocket *sockfd, uint32_t nconnections);
 
-#define RETRY_CONNECT			1000
-#define CONNECT_TIMEO_MILISEC	10000
-
+#define RETRY_CONNECT 1000
+#define CONNECT_TIMEO_MILISEC 10000
 
 #endif

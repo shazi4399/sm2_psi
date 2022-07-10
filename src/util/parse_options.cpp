@@ -5,56 +5,64 @@
 
 #include "parse_options.h"
 
-
-void print_usage(std::string progname, parsing_ctx* options, uint32_t nops) {
+void print_usage(std::string progname, parsing_ctx *options, uint32_t nops)
+{
 	uint32_t i;
 	std::cout << "Usage: " << progname << std::endl;
-	for (i = 0; i < nops; i++) {
+	for (i = 0; i < nops; i++)
+	{
 		std::cout << " -" << options[i].opt_name << " [" << options[i].help_str << (options[i].required ? ", required" : ", optional") << "]" << std::endl;
 	}
-	std::cout << std::endl << "Program exiting" << std::endl;
+	std::cout << std::endl
+			  << "Program exiting" << std::endl;
 }
 
-
-int32_t parse_options(int32_t* argcp, char*** argvp, parsing_ctx* options, uint32_t nops) {
+int32_t parse_options(int32_t *argcp, char ***argvp, parsing_ctx *options, uint32_t nops)
+{
 	int result = 0;
 	bool skip;
 	uint32_t i;
-	char* argvzero = argvp[0][0];
+	char *argvzero = argvp[0][0];
 
-	if(*argcp < 2)
+	if (*argcp < 2)
 		return 0;
 
-	while ((*argcp) > 1) {
+	while ((*argcp) > 1)
+	{
 		if ((*argvp)[1][0] != '-' || (*argvp)[1][1] == '\0' || (*argvp)[1][2] != '\0')
 			return result;
-		for (i = 0, skip = false; i < nops && !skip; i++) {
-			if (((*argvp)[1][1]) == 'h') {
+		for (i = 0, skip = false; i < nops && !skip; i++)
+		{
+			if (((*argvp)[1][1]) == 'h')
+			{
 				print_usage(argvzero, options, nops);
 				exit(0);
 			}
-			if (((*argvp)[1][1]) == options[i].opt_name) {
+			if (((*argvp)[1][1]) == options[i].opt_name)
+			{
 
-				switch (options[i].type) {
+				switch (options[i].type)
+				{
 				case T_NUM:
-					if (isdigit((*argvp)[2][0])) {
+					if (isdigit((*argvp)[2][0]))
+					{
 						++*argvp;
 						--*argcp;
-						*((uint32_t*) options[i].val) = atoi((*argvp)[1]);
+						*((uint32_t *)options[i].val) = atoi((*argvp)[1]);
 					}
 					break;
 				case T_DOUBLE:
 					++*argvp;
 					--*argcp;
-					*((double*) options[i].val) = atof((*argvp)[1]);
+					*((double *)options[i].val) = atof((*argvp)[1]);
 					break;
 				case T_STR:
 					++*argvp;
 					--*argcp;
-					*((std::string*) options[i].val) = (*argvp)[1];
+					*((std::string *)options[i].val) = (*argvp)[1];
 					break;
 				case T_FLAG:
-					*((bool*) options[i].val) = true;
+					*((bool *)options[i].val) = true;
 					break;
 				}
 				++result;
@@ -66,10 +74,10 @@ int32_t parse_options(int32_t* argcp, char*** argvp, parsing_ctx* options, uint3
 		}
 	}
 
-	for (i = 0; i < nops; i++) {
+	for (i = 0; i < nops; i++)
+	{
 		if (options[i].required && !options[i].set)
 			return 0;
 	}
 	return 1;
 }
-
