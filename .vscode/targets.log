@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Jul 10 20:00:43 2022
+# Make data base, printed on Thu Jul 14 19:22:17 2022
 
 # Variables
 
@@ -15,13 +15,11 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # automatic
 ?F = $(notdir $?)
 # environment
-WSLENV = VSCODE_WSL_EXT_LOCATION/up
+WSLENV = VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up
 # default
 .SHELLFLAGS := -c
 # makefile (from 'Makefile', line 3)
 SRC = src
-# environment
-VSCODE_LOG_NATIVE = false
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # makefile (from 'Makefile', line 17)
@@ -37,9 +35,9 @@ SHELL = /bin/sh
 # makefile (from 'Makefile', line 2)
 BIN = bin
 # environment
-VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"bbca1a7059cee8a1b93da8947fee1c4f.zh-cn","_translationsConfigFile":"/root/.vscode-server/data/clp/bbca1a7059cee8a1b93da8947fee1c4f.zh-cn/tcf.json","_cacheRoot":"/root/.vscode-server/data/clp/bbca1a7059cee8a1b93da8947fee1c4f.zh-cn","_resolvedLanguagePackCoreLocation":"/root/.vscode-server/data/clp/bbca1a7059cee8a1b93da8947fee1c4f.zh-cn/30d9c6cd9483b2cc586687151bcbcd635f373630","_corruptedFile":"/root/.vscode-server/data/clp/bbca1a7059cee8a1b93da8947fee1c4f.zh-cn/corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"1d735750dbb1b9066c7513078396ba0f.zh-cn","_translationsConfigFile":"/root/.vscode-server/data/clp/1d735750dbb1b9066c7513078396ba0f.zh-cn/tcf.json","_cacheRoot":"/root/.vscode-server/data/clp/1d735750dbb1b9066c7513078396ba0f.zh-cn","_resolvedLanguagePackCoreLocation":"/root/.vscode-server/data/clp/1d735750dbb1b9066c7513078396ba0f.zh-cn/b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a","_corruptedFile":"/root/.vscode-server/data/clp/1d735750dbb1b9066c7513078396ba0f.zh-cn/corrupted.info","_languagePackSupport":true}
 # environment
-_ = /root/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/node
+_ = /root/.vscode-server/bin/b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a/node
 # makefile (from 'Makefile', line 26)
 CFLAGS = 
 # makefile (from 'Makefile', line 11)
@@ -53,8 +51,6 @@ GNUMAKEFLAGS :=
 # environment
 XDG_DATA_DIRS = /usr/local/share:/usr/share:/var/lib/snapd/desktop
 # environment
-VSCODE_VERBOSE_LOGGING = true
-# environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
 VSCODE_CWD = /mnt/d/Microsoft VS Code
@@ -63,13 +59,15 @@ OBJECTS_UTIL = ${SRC}/util/*.o
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /root/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/d/java/jdk1.8.0_291/jre/bin:/mnt/d/apache-maven-3.6.3/bin:/mnt/d/CTEX/CTeX:/mnt/d/CTEX/CTeX/Packages/ctex/bin:/mnt/d/CTEX/CTeX/Packages/cct/bin:/mnt/d/CTEX/CTeX/Packages/ty/bin:/mnt/d/java/jdk1.8.0_291/bin:/mnt/d/scala/bin:/mnt/d/scala/jre/bin:/mnt/d/mingw64/bin:/mnt/c/Go/bin:/mnt/c/Program Files/Git/cmd:/mnt/d/mysql/bin:/mnt/c/Program Files/nodejs/:/mnt/d/texlive/2021/bin/win32:/mnt/d/MATLAB/R2021b/bin:/mnt/d/Python/Python38/Scripts/:/mnt/d/Python/Python38/:/mnt/c/Users/Leo/AppData/Local/Microsoft/WindowsApps:/mnt/d/JetBrains/GoLand 2020.3/bin:/mnt/d/JetBrains/PyCharm 2020.2.2/bin:/mnt/d/JetBrains/IntelliJ IDEA 2021.1.1/bin:/mnt/c/Users/Leo/go/bin:/mnt/d/Microsoft VS Code/bin:/mnt/c/Program Files/IPFS Desktop/resources/app.asar.unpacked/src/ipfs-on-path/scripts/bin-win:/mnt/c/Users/Leo/go/bin:/mnt/c/Users/Leo/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Leo/AppData/Roaming/npm:/mnt/d/texlive/2021/bin/win32:/snap/bin:/home/leo/cmake-3.23.1-linux-x86_64/bin
+PATH = /root/.vscode-server/bin/b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/d/java/jdk1.8.0_291/jre/bin:/mnt/d/apache-maven-3.6.3/bin:/mnt/d/CTEX/CTeX:/mnt/d/CTEX/CTeX/Packages/ctex/bin:/mnt/d/CTEX/CTeX/Packages/cct/bin:/mnt/d/CTEX/CTeX/Packages/ty/bin:/mnt/d/java/jdk1.8.0_291/bin:/mnt/d/scala/bin:/mnt/d/scala/jre/bin:/mnt/d/mingw64/bin:/mnt/c/Go/bin:/mnt/c/Program Files/Git/cmd:/mnt/d/mysql/bin:/mnt/c/Program Files/nodejs/:/mnt/d/texlive/2021/bin/win32:/mnt/d/MATLAB/R2021b/bin:/mnt/d/Python/Python38/Scripts/:/mnt/d/Python/Python38/:/mnt/c/Users/Leo/AppData/Local/Microsoft/WindowsApps:/mnt/d/JetBrains/GoLand 2020.3/bin:/mnt/d/JetBrains/PyCharm 2020.2.2/bin:/mnt/d/JetBrains/IntelliJ IDEA 2021.1.1/bin:/mnt/c/Users/Leo/go/bin:/mnt/d/Microsoft VS Code/bin:/mnt/c/Program Files/IPFS Desktop/resources/app.asar.unpacked/src/ipfs-on-path/scripts/bin-win:/mnt/c/Users/Leo/go/bin:/mnt/c/Users/Leo/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Leo/AppData/Roaming/npm:/mnt/d/texlive/2021/bin/win32:/snap/bin:/home/leo/cmake-3.23.1-linux-x86_64/bin
 # environment
 XDG_RUNTIME_DIR = /mnt/wslg/runtime-dir
 # makefile (from 'Makefile', line 37)
 OBJECTS_CRYPT = ${SRC}/util/gmCrypto/*.o
 # environment
-VSCODE_LOG_STACK = false
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_SERVER_TAR = /mnt/c/Users/Leo/AppData/Local/Temp/vscode-remote-wsl/b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a/vscode-server-stable-linux-x64.tar.gz
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -79,17 +77,15 @@ LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:
 # environment
 DISPLAY = :0
 # environment
-VSCODE_PIPE_LOGGING = true
-# environment
 PWD = /home/leo/PSI_SM2
 # makefile (from 'Makefile', line 35)
 OBJECTS_BIGN = ${SRC}/util/bigNum/*.o
 # environment
-VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-7580c072-167b-4797-9792-bcd0dc08982d.sock
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-3c720f21-4c2f-44b7-93c1-347b8419d983.sock
 # makefile (from 'Makefile', line 32)
 SOURCES_UTIL = ${SRC}/util/*.cpp
 # environment
-WSL_INTEROP = /run/WSL/12_interop
+WSL_INTEROP = /run/WSL/8_interop
 # environment
 PULSE_SERVER = /mnt/wslg/PulseServer
 # environment
@@ -101,7 +97,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 LOGNAME = root
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
@@ -189,11 +185,9 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_EXTHOST_WILL_SEND_SOCKET = true
-# environment
 WSL_DISTRO_NAME = Ubuntu-18.04
 # variable set hash-table stats:
-# Load=91/1024=9%, Rehash=0, Collisions=5/145=3%
+# Load=88/1024=9%, Rehash=0, Collisions=5/142=4%
 
 # Pattern-specific Variable Values
 
@@ -275,13 +269,13 @@ src/util/gmCrypto/crypto.o: src/util/gmCrypto/crypto.cpp src/util/gmCrypto/crypt
 
 demo:
 #  Implicit rule search has not been done.
- 
 #  Implicit/static pattern stem: ''
 #  File does not exist.
 #  File has been updated.
 #  Needs to be updated (-q is set).
 # automatic
 # @ := demo
+ 
 # automatic
 # % := 
 # automatic
@@ -449,6 +443,6 @@ src/util/connection.o: src/util/connection.cpp src/util/connection.h
 # strcache performance: lookups = 100 / hit rate = 26%
 # hash-table stats:
 # Load=74/8192=1%, Rehash=0, Collisions=3/100=3%
-# Finished Make data base on Sun Jul 10 20:00:43 2022
+# Finished Make data base on Thu Jul 14 19:22:17 2022
 
  

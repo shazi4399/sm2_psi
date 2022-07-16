@@ -1,5 +1,6 @@
 make --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/leo/PSI_SM2'
+ 
 g++ src/ecdh-psi/dh-psi.cpp -g3 -O2  -g3 -ggdb  -c -I..  -I/usr/include/glib-2.0/ -I/usr/lib/x86_64-linux-gnu/glib-2.0/include `pkg-config --cflags glib-2.0` -lgmp -lgmpxx -lpthread  -L /usr/lib  -lssl -lippcp -lcrypto -lglib-2.0 `pkg-config --libs glib-2.0`   -o src/ecdh-psi/dh-psi.o
 g++ src/util/bigNum/utils.cpp -g3 -O2  -g3 -ggdb  -c -I..  -I/usr/include/glib-2.0/ -I/usr/lib/x86_64-linux-gnu/glib-2.0/include `pkg-config --cflags glib-2.0` -lgmp -lgmpxx -lpthread  -L /usr/lib  -lssl -lippcp -lcrypto -lglib-2.0 `pkg-config --libs glib-2.0`   -o src/util/bigNum/utils.o
 g++ src/util/bigNum/bignum.cpp -g3 -O2  -g3 -ggdb  -c -I..  -I/usr/include/glib-2.0/ -I/usr/lib/x86_64-linux-gnu/glib-2.0/include `pkg-config --cflags glib-2.0` -lgmp -lgmpxx -lpthread  -L /usr/lib  -lssl -lippcp -lcrypto -lglib-2.0 `pkg-config --libs glib-2.0`   -o src/util/bigNum/bignum.o
@@ -7,7 +8,6 @@ g++ src/util/connection.cpp -g3 -O2  -g3 -ggdb  -c -I..  -I/usr/include/glib-2.0
 g++ src/util/parse_options.cpp -g3 -O2  -g3 -ggdb  -c -I..  -I/usr/include/glib-2.0/ -I/usr/lib/x86_64-linux-gnu/glib-2.0/include `pkg-config --cflags glib-2.0` -lgmp -lgmpxx -lpthread  -L /usr/lib  -lssl -lippcp -lcrypto -lglib-2.0 `pkg-config --libs glib-2.0`   -o src/util/parse_options.o
 g++ src/util/gmCrypto/crypto.cpp -g3 -O2  -g3 -ggdb  -c -I..  -I/usr/include/glib-2.0/ -I/usr/lib/x86_64-linux-gnu/glib-2.0/include `pkg-config --cflags glib-2.0` -lgmp -lgmpxx -lpthread  -L /usr/lib  -lssl -lippcp -lcrypto -lglib-2.0 `pkg-config --libs glib-2.0`   -o src/util/gmCrypto/crypto.o
 g++ -o psi.out src/mains/psi_demo.cpp src/ecdh-psi/*.o src/util/*.o  -g3 -ggdb  -lgmp -lgmpxx -lpthread  -L /usr/lib  -lssl -lippcp -lcrypto -lglib-2.0 `pkg-config --libs glib-2.0` src/util/bigNum/*.o src/util/gmCrypto/*.o -I..  -I/usr/include/glib-2.0/ -I/usr/lib/x86_64-linux-gnu/glib-2.0/include `pkg-config --cflags glib-2.0` -g3 -O2 
- 
 #g++ -o libpsi.so src/ecdh-psi/*.o src/util/*.o  -g3 -ggdb  -lgmp -lgmpxx -lpthread  -L /usr/lib  -lssl -lippcp -lcrypto -lglib-2.0 `pkg-config --libs glib-2.0` src/util/bigNum/*.o src/util/gmCrypto/*.o -I..  -I/usr/include/glib-2.0/ -I/usr/lib/x86_64-linux-gnu/glib-2.0/include `pkg-config --cflags glib-2.0` -g3 -O2 
 echo "make all done."
 make: Leaving directory '/home/leo/PSI_SM2'
