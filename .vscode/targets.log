@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Jul 14 19:22:17 2022
+# Make data base, printed on Sat Jul 16 13:14:23 2022
 
 # Variables
 
@@ -97,7 +97,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 LOGNAME = root
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
@@ -165,7 +165,7 @@ SOURCES_DHPSI = ${SRC}/ecdh-psi/*.cpp
 # environment
 LC_ALL = C
 # makefile (from 'Makefile', line 25)
-LIBRARIES = -lgmp -lgmpxx -lpthread  -L /usr/lib  -lssl -lippcp -lcrypto -lglib-2.0 `pkg-config --libs glib-2.0`
+LIBRARIES = -lpthread  -L /usr/lib -lippcp -lglib-2.0 `pkg-config --libs glib-2.0`
 # environment
 HOSTTYPE = x86_64
 # automatic
@@ -195,13 +195,13 @@ WSL_DISTRO_NAME = Ubuntu-18.04
 
 # Directories
 
-# . (device 2080, inode 253587): 11 files, no impossibilities.
+# . (device 2080, inode 253587): 12 files, no impossibilities.
 # src/util/gmCrypto (device 2080, inode 253792): 2 files, no impossibilities so far.
 # src/ecdh-psi (device 2080, inode 254550): 2 files, no impossibilities so far.
 # src/util/bigNum (device 2080, inode 253700): 7 files, no impossibilities so far.
 # src/util (device 2080, inode 254481): 12 files, no impossibilities so far.
 
-# 34 files, no impossibilities in 5 directories.
+# 35 files, no impossibilities in 5 directories.
 
 # Implicit Rules
 
@@ -274,8 +274,8 @@ demo:
 #  File has been updated.
 #  Needs to be updated (-q is set).
 # automatic
-# @ := demo
  
+# @ := demo
 # automatic
 # % := 
 # automatic
@@ -313,7 +313,7 @@ src/util/bigNum/bignum.o: src/util/bigNum/bignum.cpp src/util/bigNum/bignum.h
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-02 08:53:27.868776808
+#  Last modified 2022-07-16 11:21:12.413689402
 #  File has been updated.
 #  Successfully updated.
 
@@ -437,12 +437,12 @@ src/util/connection.o: src/util/connection.cpp src/util/connection.h
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 74 / storage = 1054 B / avg = 14 B
-# current buf: size = 8162 B / used = 1054 B / count = 74 / avg = 14 B
+# strcache buffers: 1 (0) / strings = 75 / storage = 1059 B / avg = 14 B
+# current buf: size = 8162 B / used = 1059 B / count = 75 / avg = 14 B
 
-# strcache performance: lookups = 100 / hit rate = 26%
+# strcache performance: lookups = 101 / hit rate = 25%
 # hash-table stats:
-# Load=74/8192=1%, Rehash=0, Collisions=3/100=3%
-# Finished Make data base on Thu Jul 14 19:22:17 2022
+# Load=75/8192=1%, Rehash=0, Collisions=3/101=3%
+# Finished Make data base on Sat Jul 16 13:14:23 2022
 
  
