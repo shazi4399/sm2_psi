@@ -22,7 +22,7 @@ endif
 INCLUDE=-I..  -I/usr/include/glib-2.0/ -I/usr/lib/${GNU_LIB_PATH}-linux-gnu/glib-2.0/include `pkg-config --cflags glib-2.0`
 
 
-LIBRARIES=-lgmp -lgmpxx -lpthread  -L /usr/lib  -lssl -lippcp -lcrypto -lglib-2.0 `pkg-config --libs glib-2.0`
+LIBRARIES= -lpthread  -L /usr/lib -lippcp -lglib-2.0 `pkg-config --libs glib-2.0`
 CFLAGS=
 
 # all source files and corresponding object files 
