@@ -18,4 +18,4 @@
 ![dh-psi-cpp](./docs/img/sign&verify2.png)
 
 ##运行截图
-![result](./docs/img/result/result.jpeg)
+![result](./docs/img/result.jpeg)
